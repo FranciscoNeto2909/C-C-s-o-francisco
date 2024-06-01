@@ -25,7 +25,7 @@ button.addEventListener("click", () => {
     const speachVoices = window.speechSynthesis.getVoices();
     const text = `${person.value} por favor comparecer ao ${place.value}`;
     let ut = new SpeechSynthesisUtterance(text);
-    ut.rate = 1.6;
+    ut.rate = 1.2;
     ut.voice = speachVoices[selectedVoice];
     window.speechSynthesis.speak(ut);
     button.classList.add("disabled");
